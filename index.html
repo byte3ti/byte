@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="" />
+    <!-- website name -->
+    <meta property="og:site" content="" />
+    <!-- website link -->
+    <meta property="og:title" content="" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" />
+    <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" />
+    <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="" />
+    <!-- to have large image post format in Twitter -->
+
+    <!-- Favicon  -->
+    <link rel="icon" href="" />
+
+    <!-- Webpage Title -->
+    <title>Criação de Sites | Byte3 TI</title>
+
+    <!-- Google font -->
+    <link href="" rel="stylesheet" />
+
+    <!-- Bootstrap & Bootstrap Icons -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+
+  <body>
+    <!-- //////////////////////////// INCLUDE NAVBAR //////////////////////////// -->
+    <script id="replace_with_nav" src="nav.js"></script>
+    <section class="home">
+      <div class="herosec" style="padding-bottom: 60px;"
+      >
+        <div
+          class="container col-sm-12 col-xl-10 px-4 pb-1"
+          style="padding-top: 80px;"
+        >
+          <div class="row align-items-center g-lg-5 pt-4 pb-2">
+            <div class="col-lg-6 text-center text-lg-start">
+              <h1
+                class="display-2 fw-bold mb-1 text-light text-center pb-3"
+                style="line-height: 0.9; letter-spacing: -2px;"
+              >
+                <span style="color: #eaeaea"> Tenha um <span style="color: #00F576;">Site</span> Eficiente
+              </h1>
+              <p class="mb-3 text-light text-center pb-3" style="font-size: 18px;">
+                Criamos o seu site com profissionalismo e tecnologias de última geração!
+              </p>
+
+              <div class="col">
+                <video width="100%" height="auto" controls>
+                  <source src="movie.mp4" type="video/mp4" />
+                  <source src="movie.ogg" type="video/ogg" />
+                  Your browser does not support the video tag.
+                </video>
+                
+              </div>
+            </div>
+            <div
+              class="col-md-10 mx-auto col-lg-6 pb-4"
+              data-toggle="animation"
+              data-animation-reset="true"
+              data-animation="fade-right"
+            >
+              <form
+                class="px-4 py-5 needs-validation"
+                id="formulario"
+                novalidate
+                style="
+                  background-color: transparent;
+                  border: solid 0px #111;
+                  border-radius: 0px;
+                "
+              >
+                <div class="form-group row">
+                  <p class="fs-2 text-light text-center" style="font-weight: 800; letter-spacing: -1px; line-height: 1">
+                    Receba uma proposta de nossos especialistas!
+                  </p>
+                  <!--<p class="fs-6 text-light text-center">
+                    Preencha o formulário e receba desconto em seu implante
+                    capilar!
+                  </p>-->
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="text"
+                      class="form-control heroinput"
+                      name="nome"
+                      id="nome"
+                      placeholder="Nome"
+                      required
+                      onkeypress=""
+                    />
+                    <div class="invalid-feedback">
+                      Obrigatório informar o seu nome!
+                    </div>
+                    <script>
+                      $('#nome').on('input', function () {
+                        this.value = this.value.replace(/[^a-z\. \.A-Z]/g, '')
+                      })
+                    </script>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="text"
+                      class="form-control heroinput"
+                      name="sobrenome"
+                      id="sobrenome"
+                      placeholder="Sobrenome"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Obrigatório informar o seu sobrenome!
+                    </div>
+                    <script>
+                      $('#sobrenome').on('input', function () {
+                        this.value = this.value.replace(/[^a-z\. \.A-Z]/g, '')
+                      })
+                    </script>
+                  </div>
+                </div>
+                <div class="form-group mb-3">
+                  <input
+                    type="email"
+                    class="form-control heroinput"
+                    id="floatingInput"
+                    placeholder="Seu e-mail"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Obrigatório informar o seu e-mail!
+                  </div>
+                </div>
+                <div class="col mb-3">
+                  <input
+                    type="text"
+                    class="form-control heroinput"
+                    name="empresa"
+                    id="empresa"
+                    placeholder="Empresa"
+                    required
+                    onkeypress=""
+                  />
+                  <div class="invalid-feedback">
+                    Obrigatório informar o nome da empresa!
+                  </div>
+                  <script>
+                    $('#nome').on('input', function () {
+                      this.value = this.value.replace(/[^a-z\. \.A-Z]/g, '')
+                    })
+                  </script>
+                </div>
+                <div class="form-group mb-3">
+                  <input
+                    type="tel"
+                    class="form-control heroinput"
+                    id="floatingPassword"
+                    placeholder="Seu Whatsapp"
+                    required
+                    minlength="10"
+                    onkeydown="return mascaraTelefone(event)"
+                    onkeypress="return onlyNumberKey(event)"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Obrigatório informar o seu Whatsapp com DDD!
+                  </div>
+                </div>
+                <button
+                  class="w-100 btn btn-primary fadingin confirmbtn cianglow fw-bold"
+                  type="submit"
+                  style="border-radius: 0px;"
+                >
+                  Enviar Dados
+                </button>
+                <hr class="my-4" />
+                <small class="text-light"
+                  >Ao clicar em "Enviar Dados", você concorda com os
+                  <a href="" style="color: #fff">termos de uso</a>.</small
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      ;(function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            'submit',
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            },
+            false
+          )
+        })
+      })()
+    </script>
+
+    <script>
+      function mascaraTelefone(event) {
+        let tecla = event.key
+        let telefone = event.target.value.replace(/\D+/g, '')
+
+        if (/^[0-9]$/i.test(tecla)) {
+          telefone = telefone + tecla
+          let tamanho = telefone.length
+
+          if (tamanho >= 12) {
+            return false
+          }
+
+          if (tamanho > 10) {
+            telefone = telefone.replace(/^(\d\d)(\d{5})(\d{4}).*/, '($1) $2-$3')
+          } else if (tamanho > 5) {
+            telefone = telefone.replace(
+              /^(\d\d)(\d{4})(\d{0,4}).*/,
+              '($1) $2-$3'
+            )
+          } else if (tamanho > 2) {
+            telefone = telefone.replace(/^(\d\d)(\d{0,5})/, '($1) $2')
+          } else {
+            telefone = telefone.replace(/^(\d*)/, '($1')
+          }
+
+          event.target.value = telefone
+        }
+
+        if (!['Backspace', 'Delete'].includes(tecla)) {
+          return false
+        }
+      }
+    </script>
+
+    <section id="sobre" style="padding-top: 1rem; padding-bottom: 4rem; background-color: #eeeeff">
+      <div class="container col-xxl-8 px-4 pt-2 pb-5">
+        <div class="row align-items-center justify-content-center pt-0 pb-4">
+          <h2 class="display-6 fw-bold lh-1 mb-5 mt-5 text-center" style="letter-spacing: -1px;">
+            Conheça as vantagens de<br>ter um site profissional com a Byte3 TI
+          </h2>
+          <p class="fs-6" style="max-width: 1000px; text-align: center;">
+            As empresas de sucesso no mercado procuram se diferenciar através de uma identidade visual que
+            traduza com clareza a sua missão, visão e valores, através da competente apresentação institucional
+            que os profissionais da Byte3 TI apresentam sua arte em trabalhar a busca da perfeição.
+          </p>
+        </div>
+      
+      <!-- Card 1 -->
+    <div class="row g-3 align-items-center justify-content-center pb-4">
+      <div class="col-lg-4">
+        <div class="card h-100 text-center cardwhitehover border-0">
+          <div class="card-body p-3">
+            <h5 class="cardicon"><i class="bi bi-phone"></i></h5>
+            <h5 class="card-title">Site Responsivo</h5>
+            <p class="card-text"> Acesso através de qualquer celular, tablet ou notebook.</p>
+          </div>
+        </div>
+      </div>
+<!-- Card 2 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center cardwhitehover border-0">
+          <div class="card-body p-3">
+            <h5 class="cardicon"><i class="bi bi-globe"></i></h5>
+            <h5 class="card-title">Registro de Domínio</h5>
+            <p class="card-text">Domínio personalizado com o nome da sua empresa.</p>
+          </div>
+        </div>
+      </div>
+<!-- Card 3 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center cardwhitehover border-0">
+          <div class="card-body p-3">
+            <h5 class="cardicon"><i class="bi bi-envelope"></i></h5>
+            <h5 class="card-title">E-mail Empresarial</h5>
+            <p class="card-text">E-mail de diretoria e <br>demais setores da empresa.</p>
+          </div>
+        </div>
+      </div>
+<!-- Card 4 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center cardwhitehover border-0">
+          <div class="card-body p-3">
+            <h5 class="cardicon"><i class="bi bi-coin"></i></h5>
+            <h5 class="card-title">Recebimento<br>Financeiro</h5>
+            <p class="card-text">Pagamentos simplificados e seguros.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center cardwhitehover border-0">
+          <div class="card-body p-3">
+            <h5 class="cardicon"><i class="bi bi-bar-chart-line"></i></h5>
+            <h5 class="card-title">Resultados Positivos dos Clientes</h5>
+            <p class="card-text">Sucesso na resposta comercial e na sólida expansão do negócio.</p>
+          </div>
+        </div>
+      </div>
+      <!--Card 6 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center cardwhitehover border-0">
+          <div class="card-body p-3">
+            <h5 class="cardicon"><i class="bi bi-question-circle"></i></h5>
+            <h5 class="card-title">Suporte Técnico Contínuo</h5>
+            <p class="card-text">Treinamento de uso com constante manutenção e amparo nas dificuldades de cada cliente</p>
+          </div>
+        </div>
+      </div>
+      <!--Card 7 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center cardwhitehover border-0">
+          <div class="card-body p-3">
+            <h5 class="cardicon"><i class="bi bi-search"></i></h5>
+            <h5 class="card-title">Facilidade de Busca pelo Cliente</h5>
+            <p class="card-text">Utilização de instrumentos modernos de busca, com ampla identificação através de palavras-chave
+              adequadas.</p>
+          </div>
+        </div>
+      </div>
+      <!--Card 8 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center cardwhitehover border-0">
+          <div class="card-body p-3">
+            <h5 class="cardicon"><i class="bi bi-cart-check"></i></h5>
+            <h5 class="card-title">Loja<br>Virtual</h5>
+            <p class="card-text">Venda de produtos<br>através da internet<br></p>
+          </div>
+        </div>
+      </div>
+      <!--Card 9 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center cardwhitehover border-0">
+          <div class="card-body p-3">
+            <h5 class="cardicon"><i class="bi bi-window"></i></h5>
+            <h5 class="card-title">Aplicativos Integrados ao Site</h5>
+            <p class="card-text">Instrumento de<br>integração com os clientes<br>oferecidos na Play Store<br></p>
+          </div>
+        </div>
+      </div>
+      <!--Card 10 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center cardwhitehover border-0">
+          <div class="card-body p-3">
+            <h5 class="cardicon"><i class="bi bi-megaphone"></i></h5>
+            <h5 class="card-title">Geração de Tráfego</h5>
+            <p class="card-text">Receba visitas em seu site através de anúncios no Google e Redes Sociais.<br></p>
+          </div>
+        </div>
+      </div>
+      <!--Card 11 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center cardwhitehover border-0">
+          <div class="card-body p-3">
+            <h5 class="cardicon"><i class="bi bi-clipboard-data"></i></h5>
+            <h5 class="card-title">Monitoramento de Resultados</h5>
+            <p class="card-text">Acompanhamento do seu site com análise de resultados para possíveis melhorias.</p>
+          </div>
+        </div>
+      </div>
+      <!--Card 12 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center cardwhitehover border-0">
+          <div class="card-body p-3">
+            <h5 class="cardicon"><i class="bi bi-pie-chart"></i></h5>
+            <h5 class="card-title">Business Intelligence (BI)</h5>
+            <p class="card-text">Gráficos e Dashboards interativos para avaliar resultados.</p>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+    <section
+    class="text-light"
+    id=""
+    style="padding: 4rem 0; background-color: #191633;"
+  >
+    <div class="container" id="hanging-icons">
+      <h1 class="text-center display-5 fw-bold pt-2 pb-2 text-light">
+          Diferenciais
+      </h1>
+      <div class="row">
+        <!-- Card 1 -->
+    <div class="col-lg-4">
+      <div class="card h-100 p-4 text-center cardgreenhover">
+        <div class="card-body">
+          <h5 class="cardicon"><i class="bi bi-box-arrow-up"></i></h5>
+          <h5 class="card-title text-light">Atualização tecnológica contínua</h5>
+          <p class="card-text text-light">Corpo técnico treinado e atualizado.</p>
+        </div>
+      </div>
+    </div>
+    <!--Card 2 -->
+    <div class="col-lg-4">
+      <div class="card h-100 p-4 text-center cardgreenhover">
+        <div class="card-body">
+          <h5 class="cardicon"><i class="bi bi-graph-up-arrow"></i></h5>
+          <h5 class="card-title text-light">Avaliação permanente de resultados</h5>
+          <p class="card-text text-light">Constante preocupação em melhor atender nossos clientes.</p>
+        </div>
+      </div>
+    </div>
+    <!--Card 3 -->
+    <div class="col-lg-4">
+      <div class="card h-100 p-4 text-center cardgreenhover">
+        <div class="card-body">
+          <h5 class="cardicon"><i class="bi bi-emoji-laughing"></i></h5>
+          <h5 class="card-title text-light">Satisfação e metas</h5>
+          <p class="card-text text-light">Busca pela excelência através da competência em proporcionar o sucesso de nossos clientes.</p>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background-color: #251e52;">
+    <div class="px-4 pt-5 text-center border-bottom">
+      <h1 class="display-5 fw-bold text-white">Quer conhecer<br>ainda mais benefícios?</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4 text-white">Clique no botão abaixo para falar agora com um especialista!</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <button type="button" class="btn btn-lg px-4 me-sm-3 navbtn2">Fale agora com um especialista <i class="bi bi-whatsapp"></i></button>
+        </div>
+      </div>
+      <!--<div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+          <img src="img/bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        </div>
+      </div>-->
+    </div>
+  </section>
+
+    <section style="background-color: #fff;">
+      <div class="container col-xxl-8 px-4 pt-4 pb-3">
+        <div class="row flex-lg-row-reverse align-items-center pt-4 pb-1">
+          <h2 class="display-5 fw-bold lh-1 mb-3 text-center" style="letter-spacing: -1px;">
+            Confira o nosso portfólio
+          </h2>
+          <p class="fs-5 text-center">Veja alguns modelos de sites desenvolvidos pela Byte3 TI.
+          </p>
+        </div>
+
+      <div class="container px-4 pb-4" id="custom-cards">
+    
+        <div class="row align-items-stretch g-4 pb-3">
+          
+          <div class="col-lg-4">
+            <a href="#" style="text-decoration: none;">
+              <div class="card card-cover h-100 overflow-hidden text-white bg-dark shadow-lg imghover" style="background-image: url('unsplash-photo-1.jpg'); min-height: 240px;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4">
+            <a href="#" style="text-decoration: none;">
+              <div class="card card-cover h-100 overflow-hidden text-white bg-dark shadow-lg imghover" style="background-image: url('unsplash-photo-1.jpg'); min-height: 240px;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4">
+            <a href="#" style="text-decoration: none;">
+              <div class="card card-cover h-100 overflow-hidden text-white bg-dark shadow-lg imghover" style="background-image: url('unsplash-photo-1.jpg'); min-height: 240px;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4">
+            <a href="#" style="text-decoration: none;">
+              <div class="card card-cover h-100 overflow-hidden text-white bg-dark shadow-lg imghover" style="background-image: url('unsplash-photo-1.jpg'); min-height: 240px;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4">
+            <a href="#" style="text-decoration: none;">
+              <div class="card card-cover h-100 overflow-hidden text-white bg-dark shadow-lg imghover" style="background-image: url('unsplash-photo-1.jpg'); min-height: 240px;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4">
+            <a href="#" style="text-decoration: none;">
+              <div class="card card-cover h-100 overflow-hidden text-white bg-dark shadow-lg imghover" style="background-image: url('unsplash-photo-1.jpg'); min-height: 240px;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+    </section>
+
+
+    <section
+      class=" text-light"
+      id=""
+      style="padding: 2rem 0;"
+    >
+      <div class="container" id="hanging-icons">
+        <h1 class="text-center display-6 fw-bold pt-3 pb-3" style="letter-spacing: -2px; line-height: 1;">
+            Criamos o seu site<br>de acordo com a sua necessidade!
+        </h1>
+        <div class="row justify-content-center align-items-center">
+          <!-- Card 1 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center p-3 mt-3" style="border-bottom: solid 3px #1D01C3">
+          <div class="card-body">
+            <h5 class="card-title mb-4">Página de Conversão<br>(Landing Page)</h5>
+            <p class="card-text text-dark">Página única com chamada para uma ação determinada. Ex: cadastro, apresentação de umproduto, divulgação de um serviço, etc.</p>
+          </div>
+        </div>
+      </div>
+      <!--Card 2 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center p-3 mt-3" style="border-bottom: solid 3px #19FF4C">
+          <div class="card-body" >
+            <h5 class="card-title mb-4">Site com Página Única<br>(One-page)</h5>
+            <p class="card-text text-dark">Site simplificado e objetivo na apresentação e divulgação de empresa ou serviço profissional.<br><br></p>
+          </div>
+        </div>
+      </div>
+      <!--Card 3 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center p-3 mt-3" style="border-bottom: solid 3px #FE8B00">
+          <div class="card-body" >
+            <h5 class="card-title mb-4">Site com Páginas Múltiplas (Institucional)</h5>
+            <p class="card-text text-dark">Utilização de diversas tecnologias para contemplar sites institucionais com grandes conteúdos.</p><!--a apresentação de diversos
+              serviços e produtos com a gestão permanente e eficaz da dinâmica empresarial diante da clientela. Ampla possibilidade de recursos para o acompanhamento constante dos resultados a serem obtidos.-->
+          </div>
+        </div>
+      </div>
+      <!--Card 4 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center p-3 mt-3" style="border-bottom: solid 3px #7A1DFE">
+          <div class="card-body" >
+            <h5 class="card-title mb-4">Loja Virtual<br>(Plataforma E-commerce)</h5>
+            <p class="card-text text-dark">Utilização de diversas tecnologias para contemplar sites institucionais com grandes conteúdos.</p><!--a apresentação de diversos
+              serviços e produtos com a gestão permanente e eficaz da dinâmica empresarial diante da clientela. Ampla possibilidade de recursos para o acompanhamento constante dos resultados a serem obtidos.-->
+          </div>
+        </div>
+      </div>
+      <!--Card 5 -->
+      <div class="col-lg-4">
+        <div class="card h-100 text-center p-3 mt-3" style="border-bottom: solid 3px #4A00B2" >
+          <div class="card-body" >
+            <h5 class="card-title mb-4">Portal<br>(Plataforma Completa)</h5>
+            <p class="card-text text-dark">Plataformas completas com diversas integrações e recursos que possibilitem maior interação do usuário com a empresa.</p>
+          </div>
+        </div>
+      </div>
+      
+        </div>
+      </div>
+    </section>
+
+    <section style=" background-color:#191633;">
+      <div class="container col-xxl-8 px-4 pt-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 pt-0">
+          <h1 class="text-center display-6 fw-bold pt-3 pb-3" style="letter-spacing: -2px; line-height: 1; color: #eeeeff;">
+            Perguntas Frequentes (FAQ)
+        </h1>
+          <div class="accordion " id="accordionExample">
+            <div class="accordion-item ">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne " aria-expanded="true" aria-controls="collapseOne">
+                  1) Como é feito o registro do meu domínio pela Byte3 TI?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>O domínio registrado será de propriedade do cliente, podendo ser transferido para outra
+                    empresa, caso necessário.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  2) Após a implantação do site, este poderá ser modificado sem custo?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>O custo das modificações estará diretamente relacionado com o grau de complexidade doserviço prestado.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  3) O preço do site está relacionado ao número de páginas?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Sim
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Qual é a diferença entre um site e um portal?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>O site focaliza suas ações dentro do perfil da empresa em questão. O portal é amplo e
+                    interage com diversas ações e demandas de uma ou mais empresas integradas.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Existe alguma vantagem financeira para quem levar clientes para a Byte3 TI?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Para cada 3 (três) clientes trazidos que fechem negócio, a empresa terá 2 (dois) meses de
+                    liberação do pagamento da manutenção.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Meu site irá aparecer no Google?
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Sim, pois o Google é peça fundamental e indispensável para a divulgação do site.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  Como saberei se o meu site está sendo acessado?
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Este serviço é possível e será oferecido num pacote especial de relatórios detalhados
+                    dentro da manutenção do site.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="col-md-12">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.387973936958!2d-46.18032088542329!3d-23.518544265896704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdd837206641fd%3A0x1a82a3a642b629de!2sR.%20Otoni%20Martins%2C%2045%20-%204%20-%20Parque%20Monte%20Libano%2C%20Mogi%20das%20Cruzes%20-%20SP%2C%2008780-550!5e0!3m2!1spt-BR!2sbr!4v1671224819454!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="300"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- //////////////////////////// INCLUDE FOOTER //////////////////////////// 
+    <script id="replace_with_footer" src="footer.js"></script>-->
+    <footer class="align-items-center pt-2 pb-0 mb-0" style="padding-bottom: 0px; margin-bottom: 0px; border: solid 1px red;">
+      <div class="container mb-0 pb-0">
+        <div class="row mb-0 pb-0">
+      <div class="col-md-6 align-items-center">
+        <a href="/" class="mb-0 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <span class="mb-0 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+      </div>
+      
+  
+      <ul class="nav col-md-6 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  </footer>
+
+    <!-- jQuery Plugins -->
+    <!--<script src="js/jquery.min.js"></script>-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.slim.js"
+      integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/jquery.stellar.min.js"></script>-->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+
+    <script>
+      ;(function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+          form.addEventListener(
+            'submit',
+            function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            },
+            false
+          )
+        })
+      })()
+    </script>
+
+    <script>
+      function checkPhoneKey(key) {
+        return (key >= '0' && key <= '9') || ['+', '(', ')', '-'].includes(key)
+      }
+    </script>
+
+    <!-- Animação -->
+    <script src="js/animation.js"></script>
+
+    <script>
+      function onlyNumberKey(evt) {
+        // Only ASCII character in that range allowed
+        var ASCIICode = evt.which ? evt.which : evt.keyCode
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) return false
+        return true
+      }
+    </script>
+  </body>
+</html>
